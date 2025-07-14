@@ -1,0 +1,143 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "admin",
+      "role": "admin"
+    },
+    {
+      "id": "95b0",
+      "username": "brayan",
+      "password": "12",
+      "role": "visitor"
+    },
+    {
+      "id": "453c",
+      "username": "brayan",
+      "password": "12",
+      "role": "visitor"
+    },
+    {
+      "id": "2643",
+      "username": "brayan",
+      "password": "123",
+      "role": "visitor"
+    },
+    {
+      "id": "5dd6",
+      "username": "brayan",
+      "password": "1234",
+      "role": "visitor"
+    },
+    {
+      "id": "d9d0",
+      "username": "brayan",
+      "password": "1234",
+      "role": "visitor"
+    },
+    {
+      "id": "f669",
+      "username": "brayan",
+      "password": "1234",
+      "role": "visitor"
+    },
+    {
+      "id": "ccc1",
+      "username": "brayan",
+      "password": "1234",
+      "role": "admin"
+    },
+    {
+      "id": "92b7",
+      "username": "brayan",
+      "password": "hola",
+      "role": "admin"
+    },
+    {
+      "id": "d516",
+      "username": "brayan",
+      "password": "123",
+      "role": "visitor"
+    },
+    {
+      "id": "ad6d",
+      "username": "brayan",
+      "password": "123",
+      "role": "visitor"
+    }
+  ],
+  "events": [
+    {
+      "id": "1",
+      "name": "HOla",
+      "description": "Una visita guiada por las mejores obras de arte."
+    },
+    {
+      "id": "2",
+      "name": "Musica",
+      "description": "Disfruta de una noche de música clásica con la orquesta sinfónica."
+    },
+    {
+      "id": "3",
+      "name": "Feria de Libros",
+      "description": "Explora una gran variedad de libros y participa en firmas de autores."
+    }
+  ],
+  "registrations": [
+    {
+      "id": "0d28",
+      "userId": "95b0",
+      "eventId": "1"
+    },
+    {
+      "id": "394b",
+      "userId": "2643",
+      "eventId": "1",
+      "userName": "brayan",
+      "userAge": "12"
+    },
+    {
+      "id": "8c8b",
+      "userId": "5dd6",
+      "eventId": "1",
+      "userName": "brayan",
+      "userAge": "12"
+    },
+    {
+      "id": "3587",
+      "userId": "5dd6",
+      "eventId": "2",
+      "userName": "hola",
+      "userAge": "123"
+    },
+    {
+      "id": "7177",
+      "userId": "5dd6",
+      "eventId": "1",
+      "userName": "brayan",
+      "userAge": "123"
+    },
+    {
+      "id": "cf05",
+      "userId": "5dd6",
+      "eventId": "2",
+      "userName": "hola",
+      "userAge": "123"
+    },
+    {
+      "id": "5f8f",
+      "userId": "2643",
+      "eventId": "1",
+      "userName": "brayan",
+      "userAge": "12"
+    },
+    {
+      "id": "287c",
+      "userId": "2643",
+      "eventId": "1",
+      "userName": "123",
+      "userAge": "2"
+    }
+  ]
+}

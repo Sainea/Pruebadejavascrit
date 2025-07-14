@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Eventos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <div id="login">
+            <h1>Iniciar Sesión</h1>
+            <form id="loginForm">
+                <input type="text" id="username" placeholder="Usuario" required>
+                <input type="password" id="password" placeholder="Contraseña" required>
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+            <p>¿No tienes una cuenta? <a href="#" id="showRegister">Regístrate</a></p>
+        </div>
+
+        <div id="register" style="display: none;">
+            <h1>Registrarse</h1>
+            <form id="registerForm">
+                <input type="text" id="newUsername" placeholder="Usuario" required>
+                <input type="password" id="newPassword" placeholder="Contraseña" required>
+                <button type="submit">Registrarse</button>
+            </form>
+            <p>¿Ya tienes una cuenta? <a href="#" id="showLogin">Iniciar Sesión</a></p>
+        </div>
+
+        <div id="events" style="display: none;">
+            <h1>Eventos Disponibles</h1>
+            <button id="logoutButton">Cerrar Sesión</button>
+            <ul id="eventList"></ul>
+        </div>
+    </div>
+
+    <div id="registerForEventModal" style="display: none;">
+        <h2>Registrarse en el Evento</h2>
+        <form id="registerForEventForm">
+            <input type="text" id="userName" placeholder="Nombre" required>
+            <input type="number" id="userAge" placeholder="Edad" required>
+            <button type="submit">Confirmar Registro</button>
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
