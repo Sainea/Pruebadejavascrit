@@ -6,16 +6,20 @@ The Event Management System is a web application designed to facilitate the mana
 
 ## Features
 
-- **User Authentication**: Register and login functionality for users.
-- **Event Management**: Administrators can create, edit, and delete events.
-- **Event Registration**: Visitors can register for available events.
-- **User-Friendly Interface**: Modern and responsive design that adapts to various screen sizes.
+| Feature | Description |
+|---|---|
+| User Authentication | Register and login functionality for users. |
+| Event Management | Administrators can create, edit, and delete events. |
+| Event Registration | Visitors can register for available events. |
+| User-Friendly Interface | Modern and responsive design that adapts to various screen sizes. |
 
 ## Technologies Used
 
-- **Frontend**: HTML5, CSS3, JavaScript (ES6+)
-- **Backend Simulation**: JSON Server to simulate a RESTful API.
-- **Version Control**: Git
+| Technology | Description |
+|---|---|
+| Frontend | HTML5, CSS3, JavaScript
+| Backend Simulation | JSON Server to simulate a RESTful API. |
+| Version Control | Git |
 
 ## Installation and Setup
 
@@ -26,10 +30,15 @@ The Event Management System is a web application designed to facilitate the mana
 
 ## Project Structure
 
-- `index.html`: Main file of the application.
-- `styles.css`: CSS stylesheet for the application.
-- `index.js`: Main JavaScript file containing the application logic.
-- `db.json`: Simulated database file using JSON Server.
+## Project Structure
+
+| File | Description |
+|---|---|
+| `index.html` | Main file of the application. |
+| `styles.css` | CSS stylesheet for the application. |
+| `index.js` | Main JavaScript file containing the application logic. |
+| `router.js` | JavaScript file responsible for handling the routing of the application. |
+| `db.json` | Simulated database file using JSON Server. |
 
 ## Usage
 
