@@ -1,49 +1,74 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestión de Eventos</title>
+    <title>Event Management</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div id="app">
         <div id="login">
-            <h1>Iniciar Sesión</h1>
+            <h1>Login</h1>
+            <div id="errorMessage" class="error-message"></div>
             <form id="loginForm">
-                <input type="text" id="username" placeholder="Usuario" required>
-                <input type="password" id="password" placeholder="Contraseña" required>
-                <button type="submit">Iniciar Sesión</button>
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Login</button>
             </form>
-            <p>¿No tienes una cuenta? <a href="#" id="showRegister">Regístrate</a></p>
+            <p>Don't have an account? <a href="#" id="showRegister">Register</a></p>
         </div>
 
         <div id="register" style="display: none;">
-            <h1>Registrarse</h1>
+            <h1>Register</h1>
+            <div id="registerErrorMessage" class="error-message"></div>
             <form id="registerForm">
-                <input type="text" id="newUsername" placeholder="Usuario" required>
-                <input type="password" id="newPassword" placeholder="Contraseña" required>
-                <button type="submit">Registrarse</button>
+                <input type="text" id="newUsername" placeholder="Username" required>
+                <input type="password" id="newPassword" placeholder="Password" required>
+                <button type="submit">Register</button>
             </form>
-            <p>¿Ya tienes una cuenta? <a href="#" id="showLogin">Iniciar Sesión</a></p>
+            <p>Already have an account? <a href="#" id="showLogin">Login</a></p>
         </div>
 
         <div id="events" style="display: none;">
-            <h1>Eventos Disponibles</h1>
-            <button id="logoutButton">Cerrar Sesión</button>
+            <h1>Available Events</h1>
+            <div id="eventsErrorMessage" class="error-message"></div>
+            <button id="logoutButton">Logout</button>
             <ul id="eventList"></ul>
         </div>
     </div>
 
     <div id="registerForEventModal" style="display: none;">
-        <h2>Registrarse en el Evento</h2>
+        <h2>Register for Event</h2>
+        <div id="registerForEventErrorMessage" class="error-message"></div>
         <form id="registerForEventForm">
-            <input type="text" id="userName" placeholder="Nombre" required>
-            <input type="number" id="userAge" placeholder="Edad" required>
-            <button type="submit">Confirmar Registro</button>
+            <input type="text" id="userName" placeholder="Name" required>
+            <input type="number" id="userAge" placeholder="Age" required>
+            <button type="submit">Confirm Registration</button>
         </form>
     </div>
 
-    <script src="index.js"></script>
+    <div id="createEventModal" style="display: none;">
+        <h2>Create Event</h2>
+        <div id="createEventErrorMessage" class="error-message"></div>
+        <form id="createEventForm">
+            <input type="text" id="eventName" placeholder="Event Name" required>
+            <input type="text" id="eventDescription" placeholder="Event Description" required>
+            <input type="number" id="eventQuota" placeholder="Event Quota" required>
+            <button type="submit">Create Event</button>
+        </form>
+    </div>
+
+    <div id="editEventModal" style="display: none;">
+        <h2>Edit Event</h2>
+        <div id="editEventErrorMessage" class="error-message"></div>
+        <form id="editEventForm">
+            <input type="text" id="editEventName" placeholder="New Event Name" required>
+            <input type="number" id="editEventQuota" placeholder="New Event Quota" required>
+            <button type="submit">Save Changes</button>
+        </form>
+    </div>
+
+    <script type="module" src="index.js"></script>
 </body>
 </html>
